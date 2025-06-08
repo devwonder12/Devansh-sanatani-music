@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D-MUSIC | Devansh</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/e9ccfa3373.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="LOGO.png.avif" alt="Logo" />
+      <h1>D-MUSIC</h1>
+    </div>
+    <ul class="nav-links">
+      <li id="navHome" class="active">Home</li>
+      <li id="navAbout">About</li>
+      <li id="navContact">Contact</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="homeSection" class="section active">
+      <div class="album-carousel">
+        <img src="cover/1.jpg" alt="Album 1" />
+        <img src="cover/2.webp" alt="Album 2" />
+        <img src="cover/3.webp" alt="Album 3" />
+      </div>
+
+      <div class="song-list" id="songList"></div>
+    </section>
+
+    <section id="aboutSection" class="section">
+      <h2>About</h2>
+      <p>This is a high-res music player created by Devansh Sharma inspired by Apple Music.</p>
+    </section>
+
+    <section id="contactSection" class="section">
+      <h2>Contact</h2>
+      <p>Instagram: @devansh_music</p>
+    </section>
+  </main>
+
+  <div class="now-playing" id="nowPlayingView">
+    <img id="nowPlayingCover" src="" alt="Album" />
+    <h3 id="nowPlayingTitle">Now Playing</h3>
+    <input type="range" id="nowPlayingBar" value="0" min="0" max="100" />
+  </div>
+
+  <div class="mini-player" id="miniPlayer">
+    <img src="cover/1.jpg" id="miniCover" />
+    <div class="mini-info">
+      <span id="miniSongName">Song Name</span>
+    </div>
+    <div class="mini-controls">
+      <i id="miniPrev" class="fa-solid fa-backward"></i>
+      <i id="miniPlayPause" class="fa-solid fa-play"></i>
+      <i id="miniNext" class="fa-solid fa-forward"></i>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
